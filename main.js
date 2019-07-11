@@ -30,7 +30,9 @@ $(document).ready(() => {
         $("#reserveinfo").addClass("show")
     })
     
-    
+     $(".appetizers #allergy").hover(function(e) {
+         $(".appetizers #extras").addClass("highlight")
+     })
     
     
     
@@ -43,12 +45,21 @@ $(document).ready(() => {
     function makeApp(apps) {
         apps.appetizers.map(function(item) {
             appTemplate += `
-            <h3>${item.name}</h3>
-            <p>${item.price}</p>
+            <div>
+                <h3>${item.name}</h3>
+                <h3>${item.price}</h3>
+            </div>
+            <div>
+                <i class="fas fa-exclamation id="allergy" "></i>           
+                <i class="fas fa-fire-alt" id="spicy"></i>
+                <i class="fas fa-leaf" id="veg"></i>
+            </div>
+            <div id="extras"> 
+                <p>Is it Spicy? ${item.extra.spicy}</p>
+                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
+                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
+            </div>
             <p>${item.description}</p>
-            <p>Is it Spicy? ${item.extra.spicy}</p>
-            <p>Does it have Gluten? ${item.extra.glutenfree}</p>
-            <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
             <br>
             `
         }).join('')
@@ -58,12 +69,21 @@ $(document).ready(() => {
     function makeEnt(apps) {
         apps.entrees.map(function(item) {
             entreeTemplate += `
-            <h3>${item.name}</h3>
-            <p>${item.price}</p>
+            <div>
+                <h3>${item.name}</h3>
+                <h3>${item.price}</h3>
+            </div>
+            <div>
+                <i class="fas fa-exclamation id="allergy" "></i>            
+                <i class="fas fa-fire-alt" id="spicy"></i>
+                <i class="fas fa-leaf" id="veg"></i>
+            </div>
+            <div id="extras"> 
+                <p>Is it Spicy? ${item.extra.spicy}</p>
+                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
+                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
+            </div>
             <p>${item.description}</p>
-            <p>Is it Spicy? ${item.extra.spicy}</p>
-            <p>Does it have Gluten? ${item.extra.glutenfree}</p>
-            <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
             <br>
             `
         }).join('')
@@ -73,17 +93,56 @@ $(document).ready(() => {
     function makeDes(apps) {
         apps.desserts.map(function(item) {
             dessertTemplate += `
-            <h3>${item.name}</h3>
-            <p>${item.price}</p>
+            <div>
+                <h3>${item.name}</h3>
+                <h3>${item.price}</h3>
+            </div>
+            <div>
+                <i class="fas fa-exclamation id="allergy" "></i>            
+                <i class="fas fa-fire-alt" id="spicy"></i>
+                <i class="fas fa-leaf" id="veg"></i>
+            </div>
+            <div id="extras"> 
+                <p>Is it Spicy? ${item.extra.spicy}</p>
+                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
+                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
+            </div>
             <p>${item.description}</p>
-            <p>Is it Spicy? ${item.extra.spicy}</p>
-            <p>Does it have Gluten? ${item.extra.glutenfree}</p>
-            <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
             <br>
             `
         }).join('')
         $(".desserts").html(dessertTemplate);
     }
     
+
+
+
+
+
+
+
+
+
     })
      
+
+
+    // code for all the extras 
+
+    // <div class="extra">
+            //     
+            // </div>
+
+
+            // <div class="extra">
+            //     <p>Is it Spicy? ${item.extra.spicy}</p>
+            //     <p>Does it have Gluten? ${item.extra.glutenfree}</p>
+            //     <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
+            // </div>
+
+
+            // <div class="extra"> 
+            //     <p>Is it Spicy? ${item.extra.spicy}</p>
+            //     <p>Does it have Gluten? ${item.extra.glutenfree}</p>
+            //     <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
+            // </div>
