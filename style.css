@@ -1,0 +1,100 @@
+html {box-sizing:border-box;}
+*,*::before,*::after {box-sizing:inherit}
+
+#container {
+    width: 1000px;
+    margin: auto;
+}
+
+header {
+    height: 120px;
+    border-bottom: 3px solid rgba(18, 18, 18, .6);
+    display: flex;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://www.jetchill.com/wp-content/uploads/2017/05/blog-header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#logo {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size:40pt;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-weight: 600;
+}
+.opentable {
+    height: 60px;
+    width: 70px;
+    position: relative;
+    right: 17px;
+    top: 17px;
+}
+.fa-facebook-square {
+    color: rgb(43,62,147);
+    background: white;
+}
+.fa-instagram {
+    background-image: linear-gradient(to bottom right, purple, pink, orange);
+    color: white;
+    border-radius: 5%
+}
+.fa-twitter-square {
+    color: rgb(66,152,237);
+    background: white;
+}
+#social {
+    font-size: 26pt; 
+    list-style: none;
+    position: relative;
+    left: 455px;
+    top: 10px;
+    
+}
+#carousel {
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+    background: aqua;
+}
+section {
+    height: 300px;
+    display: flex;
+    flex-direction: row
+}
+#news , #special , #location {
+    width: 320px;
+    height: 300px;
+    flex-direction: row;
+    background: pink;
+}
+#accordion {
+    width: 100%;
+    min-height: 500px;
+    background: yellow;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border:none;
+}
+
+button:focus {
+    outline: none;
+}
+
+#storyinfo, #ourmenu, #reserveinfo{
+    display: none;
+    
+}
+
+#storyinfo.show, #ourmenu.show, #reserveinfo.show {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+#story.border, #menu.border, #reserve.border {
+    border: 2px solid grey;
+}
