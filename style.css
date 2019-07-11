@@ -152,3 +152,12 @@ button:focus {
 #story.border, #menu.border, #reserve.border {
     border: 2px solid grey;
 }
+
+.appetizers h3 {
+    font-size: 18px;
+}
+
+/* .appetizers #extras, .entrees #extras, .desserts #extras {
+    opacity: 0;
+} */
+
