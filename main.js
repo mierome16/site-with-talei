@@ -41,8 +41,6 @@ $(document).ready(function(){
        
        
   
-  
-  
       $(".next").on('click', function(){
       
           var current = $(".current").attr("id").substr(5)
