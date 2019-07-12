@@ -1,0 +1,17 @@
+            <div id="extras"> 
+                <p>Is it Spicy? ${item.extra.spicy}</p>
+                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
+                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
+            </div>
+
+                        <div id="extras"> 
+                <p>Is it Spicy? ${item.extra.spicy}</p>
+                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
+                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
+            </div>
+
+                        <div id="extras"> 
+                <p>Is it Spicy? ${item.extra.spicy}</p>
+                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
+                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
+            </div>

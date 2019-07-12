@@ -2,7 +2,7 @@ html {box-sizing:border-box;}
 *,*::before,*::after {box-sizing:inherit}
 
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://jooinn.com/images/wooden-board-texture-1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(https://images.getbento.com/bentobox/blog/banner/beautiful_minimal_websites.jpg?w=1600&fit=max&auto=compress,format);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -16,21 +16,21 @@ header {
     height: 120px;
     border-bottom: 3px solid rgba(18, 18, 18, .6);
     display: flex;
-    background-size: cover;    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.plantcafe.co.za/wp-content/uploads/2014/11/slider-restaurant.jpg);
-
+    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://www.plantcafe.co.za/wp-content/uploads/2014/11/slider-restaurant.jpg);
     background-repeat: no-repeat;
 }
 #logo {
     font-family: 'Dancing Script', cursive;
     color: white;
-    font-size:40pt;
-    margin-top: 20px;
-    margin-left: 25px;
+    font-size: 46pt;
+    margin-top: 18px;
+    margin-left: 350px;
     font-weight: 600;
 }
 .opentable {
-    height: 60px;
-    width: 70px;
+    height: 46px;
+    width: 54px;
     position: relative;
     right: 17px;
     top: 17px;
@@ -49,11 +49,11 @@ header {
     background: white;
 }
 #social {
-    font-size: 26pt; 
+    font-size: 15pt;
     list-style: none;
     position: relative;
-    left: 341px;
-    top: 10px;
+    left: 190px;
+    top: 15px;
     
 }
 #carousel {
@@ -123,8 +123,11 @@ section {
 }
 #accordion {
     width: 100%;
-    min-height: 500px;
-    background: yellow;
+    height: 600px;
+    overflow: scroll;
+    background: rgb(199, 196, 190);
+    margin-top: 30px;
+
 }
 
 button {
@@ -137,6 +140,7 @@ button {
 button:focus {
     outline: none;
 }
+
 
 #storyinfo, #ourmenu, #reserveinfo{
     display: none;
@@ -152,9 +156,39 @@ button:focus {
 #story.border, #menu.border, #reserve.border {
     border: 2px solid grey;
 }
+#story , #menu , #reserve {
+    font-size: 24px;
+    font-weight: bold;
+    width:170px;
+    height: 60px;
+    padding: 8px;
+    font-family: 'Dancing Script', cursive;
+    background: rgb(199, 196, 190);
+    border: 2px solid black;
+}
 
-.appetizers h3 {
+#ourmenu > h3 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+.itemname , .itemprice {
     font-size: 18px;
+}
+.itemprice {
+    text-align: end;
+    margin-top: -32px;
+}
+.description {
+    font-size: 15px;
+    margin-top: -20px;
+    width: 85%;
+}
+footer {
+    width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    height: 300px;
+    background: white
 }
 
 /* .appetizers #extras, .entrees #extras, .desserts #extras {
