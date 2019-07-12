@@ -125,20 +125,15 @@ $(document).ready(() => {
         apps.appetizers.map(function(item) {
             appTemplate += `
             <div>
-                <h3>${item.name}</h3>
-                <h3>${item.price}</h3>
+                <h3 class="itemname">${item.name}</h3>
+                <h3 class="itemprice">${item.price}</h3>
             </div>
+            <p class="description">  <strong>&#x021AC</strong>  ${item.description}</p>
             <div>
                 <i class="fas fa-exclamation id="allergy" "></i>           
                 <i class="fas fa-fire-alt" id="spicy"></i>
                 <i class="fas fa-leaf" id="veg"></i>
             </div>
-            <div id="extras"> 
-                <p>Is it Spicy? ${item.extra.spicy}</p>
-                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
-                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
-            </div>
-            <p>${item.description}</p>
             <br>
             `
         }).join('')
@@ -149,20 +144,15 @@ $(document).ready(() => {
         apps.entrees.map(function(item) {
             entreeTemplate += `
             <div>
-                <h3>${item.name}</h3>
-                <h3>${item.price}</h3>
+                <h3 class="itemname">${item.name}</h3>
+                <h3 class="itemprice">${item.price}</h3>
             </div>
+            <p class="description">  <strong>&#x021AC</strong>  ${item.description}</p>
             <div>
                 <i class="fas fa-exclamation id="allergy" "></i>            
                 <i class="fas fa-fire-alt" id="spicy"></i>
                 <i class="fas fa-leaf" id="veg"></i>
             </div>
-            <div id="extras"> 
-                <p>Is it Spicy? ${item.extra.spicy}</p>
-                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
-                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
-            </div>
-            <p>${item.description}</p>
             <br>
             `
         }).join('')
@@ -173,20 +163,15 @@ $(document).ready(() => {
         apps.desserts.map(function(item) {
             dessertTemplate += `
             <div>
-                <h3>${item.name}</h3>
-                <h3>${item.price}</h3>
+                <h3 class="itemname">${item.name}</h3>
+                <h3 class="itemprice">${item.price}</h3>
             </div>
+            <p class="description">   <strong>&#x021AC</strong>  ${item.description}</p>
             <div>
                 <i class="fas fa-exclamation id="allergy" "></i>            
                 <i class="fas fa-fire-alt" id="spicy"></i>
                 <i class="fas fa-leaf" id="veg"></i>
             </div>
-            <div id="extras"> 
-                <p>Is it Spicy? ${item.extra.spicy}</p>
-                <p>Does it have Gluten? ${item.extra.glutenfree}</p>
-                <p>Vegetarian Dish? ${item.extra.vegetarian}</p>
-            </div>
-            <p>${item.description}</p>
             <br>
             `
         }).join('')
